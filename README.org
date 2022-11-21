@@ -1,0 +1,7 @@
+#+TITLE: README
+#+AUTHOR: Kyure_A
+#+OPTIONS: toc:nil
+
+* What is this?
+This is for the almost automatic creation of subdomain repositories for any given domain.
+I created this repository for "いんたー.net", but of course it can be used for other domains (although some modifications may be necessary)

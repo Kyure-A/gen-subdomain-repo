@@ -2,11 +2,9 @@
 # 入力した文字列を punycode に変換し、リポジトリを作成、namecheap の API を叩いて DNS レコードを作成する
 
 import idna         # treat punycode
-import namecheap
+import jinja2
 import pathlib
 import re
-
-api = namecheap.Api(username, api_key, username, ip_address, sandbox = True)
 
 def unicodeToPunycode (unicode: str):
     punycode = idna.encode(unicode)
@@ -16,8 +14,14 @@ def punycodeToUnicode (punycode: str):
     unicode = idna.decode(punycode)
     return unicode
 
-def makedir (path_arg, subdomain_unicode):
+def makeDir (path_arg: str, subdomain_unicode: str):
     path = path_arg + "/" + unicodeToPunycode(subdomain_unicode)
     pathlib.Path(path).mkdir()
 
+def makeHtml (path_arg: str):
+    return 0
 
+def makeRepo ():
+    return 0
+
+makeDir(input(), input())
