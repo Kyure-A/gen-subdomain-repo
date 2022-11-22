@@ -1,0 +1,14 @@
+#+TITLE: README
+#+AUTHOR: Kyure_A
+#+OPTIONS: toc:nil
+
+* これなに？
+いんたー.net のサブドメインのリポジトリ（例えば、Twitterとかいう.いんたー.net）を作成するためのものです。
+このリポジトリは前述したように いんたー.net のために書きましたが、もちろん他のドメインにも使えます。（修正は必要だと思うけど）
+
+* 使い方
+- credentials 直下に {DNS を管理しているサービス名}_credentials.py (現時点では namecheap_credentials.py のみ) をつくる
+- 叩く
+- GitHub にリポジトリまでできる
+
+これらまで目指しているが、まだカスカスのカスの部分しかできていない
